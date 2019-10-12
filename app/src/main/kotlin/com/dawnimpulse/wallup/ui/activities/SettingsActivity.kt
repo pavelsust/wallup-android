@@ -31,6 +31,7 @@ import java.util.concurrent.TimeUnit
  * @note Updates :
  *  Saksham - 2019 09 02 - develop - clear cache on search term change + cache options
  */
+
 class SettingsActivity : AppCompatActivity() {
 
     /**
@@ -49,6 +50,7 @@ class SettingsActivity : AppCompatActivity() {
     /**
      * attaching preferences
      */
+
     class MySettingsFragment : PreferenceFragmentCompat(), Preference.OnPreferenceChangeListener {
 
         private lateinit var wallStatus: SwitchPreference
@@ -64,6 +66,7 @@ class SettingsActivity : AppCompatActivity() {
         /**
          * set preference layout
          */
+
         override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
             setPreferencesFromResource(R.xml.preferences, rootKey)
 

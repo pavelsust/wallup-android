@@ -110,8 +110,6 @@ class ImageActivity : AppCompatActivity(), View.OnClickListener {
                     }
                 }
             }
-
-
             back.id -> finish()
         }
     }

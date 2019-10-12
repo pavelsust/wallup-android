@@ -63,7 +63,6 @@ class AutoWallpaper(private val appContext: Context, workerParams: WorkerParamet
 
             // remove duplicates
             F.removeDuplicates(appContext.filesDir.listFiles().toList())
-
             wallpaperManager = WallpaperManager.getInstance(appContext)
             handler = Handler(Looper.getMainLooper())
             wallpaperChange {
@@ -78,6 +77,8 @@ class AutoWallpaper(private val appContext: Context, workerParams: WorkerParamet
     // -----------------------------
     //   wallpaper change handling
     // -----------------------------
+
+
     private fun wallpaperChange(callback: (Boolean) -> Unit) {
         val files = appContext.filesDir.listFiles().filter { it.name.contains(".jpg") }.toTypedArray()
         Arrays.sort(files, LastModifiedFileComparator.LASTMODIFIED_COMPARATOR)

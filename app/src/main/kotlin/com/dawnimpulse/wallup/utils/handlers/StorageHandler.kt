@@ -36,6 +36,8 @@ object StorageHandler {
     // -------------------------
     //   store bitmap in file
     // -------------------------
+
+
     fun storeBitmapInFile(bitmap: Bitmap, file: File) {
 
         try {
@@ -52,6 +54,8 @@ object StorageHandler {
     // ------------------------------
     //   store bitmap with callback
     // ------------------------------
+
+
     fun storeBitmapWithCallback(bitmap: Bitmap, file: File, callback: (Boolean) -> Unit) {
 
         try {
@@ -70,6 +74,8 @@ object StorageHandler {
     // -------------------------
     //   get bitmap from file
     // -------------------------
+
+
     fun getBitmapFromFile(file: File): Bitmap {
         val bmOptions = BitmapFactory.Options()
         return BitmapFactory.decodeFile(file.absolutePath, bmOptions)
