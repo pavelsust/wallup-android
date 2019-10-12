@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "565243123866",
+    "firebase_url": "https://wallpaper-change.firebaseio.com",
+    "project_id": "wallpaper-change",
+    "storage_bucket": "wallpaper-change.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:565243123866:android:4baa9272bddd54d3a6e723",
+        "android_client_info": {
+          "package_name": "com.dawnimpulse.wallup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "565243123866-jjitco6pisdktgg582um8srk65hcelti.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCJ-rkk5qWKOHpDG-CvrAZuTjKkrZEk_k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "565243123866-jjitco6pisdktgg582um8srk65hcelti.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

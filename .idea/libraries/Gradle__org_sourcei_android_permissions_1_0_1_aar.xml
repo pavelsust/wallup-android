@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: org.sourcei.android:permissions:1.0.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/dd7a21edc06c9fec65f2f0d5189332d9/permissions-1.0.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/dd7a21edc06c9fec65f2f0d5189332d9/permissions-1.0.1/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.sourcei.android/permissions/1.0.1/d5c31848943f24359cec91d1c4308d7e73bfdfa6/permissions-1.0.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.sourcei.android/permissions/1.0.1/d9ea882cc6951afbe22ee7e457049b6b6c229de0/permissions-1.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

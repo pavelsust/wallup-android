@@ -16,10 +16,11 @@
         android:icon="@drawable/ic_launcher"
         android:label="Wallup"
         android:largeHeap="true"
-        android:networkSecurityConfig="@xml/network_security_config"
+        android:usesCleartextTraffic="true"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning,UnusedAttribute,MissingApplicationIcon">
+
 
         <!-- File provider for Android 7+ -->
         <provider
@@ -31,6 +32,7 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/file_provider_path" />
         </provider>
+
 
         <!-- Crashlytics -->
         <meta-data
