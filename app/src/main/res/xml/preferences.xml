@@ -54,6 +54,7 @@
             android:key="showToast"
             android:summaryOff="Not showing toast on Auto wallpaper change"
             android:summaryOn="Showing toast whenever Auto wallpaper changes"
+
             android:title="Show Toast"
             app:iconSpaceReserved="true" />
 

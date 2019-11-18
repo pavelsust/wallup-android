@@ -14,9 +14,11 @@
  **/
 package com.dawnimpulse.wallup.ui.activities
 
+import android.content.Intent
 import android.graphics.Bitmap
 import android.media.MediaScannerConnection
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.dawnimpulse.wallup.R
@@ -55,6 +57,7 @@ class WallpaperActivity : AppCompatActivity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_wallpaper)
+
 
         // check for temp image & apply
         if (File(cacheDir, "homescreen.jpg").exists()) {
@@ -169,6 +172,8 @@ class WallpaperActivity : AppCompatActivity(), View.OnClickListener {
      */
     private fun getImage() {
 
+        Log.d("MAINACTIVITY" , ""+bitmap)
+
         ImageHandler.getBitmapWallpaper(this, "https://source.unsplash.com/random/1440x3040/?${Prefs.getString("search", "")}") {
             runOnUiThread {
                 if (it != null) {
@@ -210,4 +215,5 @@ class WallpaperActivity : AppCompatActivity(), View.OnClickListener {
         }
     }
 
+    fun <T> openActivity(it : Class<T>) = Intent().apply {startActivity(Intent(this@WallpaperActivity , it))}
 }

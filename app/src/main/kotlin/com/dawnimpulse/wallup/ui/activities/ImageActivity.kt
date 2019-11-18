@@ -87,7 +87,6 @@ class ImageActivity : AppCompatActivity(), View.OnClickListener {
                 }
             }
 
-
             download.id -> {
                 Permissions.askWriteExternalStoragePermission(this) { e, r ->
                     e?.let {

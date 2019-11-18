@@ -187,6 +187,8 @@ fun Context.displayRatio(): Pair<Int, Int> {
         return width
     }
 
+
+
     val point = F.displayDimensions(this)
     val hcf = calculateHcf(point.x, point.y)
 

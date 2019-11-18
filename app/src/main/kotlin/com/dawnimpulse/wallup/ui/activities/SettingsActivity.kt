@@ -87,6 +87,8 @@ class SettingsActivity : AppCompatActivity() {
             // setting time interval
             val time = Prefs.getString("wallInterval", "1440")!!.toLong()
 
+
+
             // interval naming
             val timing = when (time) {
                 15.toLong() -> "15 min"
@@ -101,6 +103,7 @@ class SettingsActivity : AppCompatActivity() {
             }
 
             wallInterval.summary = "Change every $timing (tap to change)"
+
 
             // search text
             if (Prefs.getString("search", "")!!.isEmpty())
@@ -132,6 +135,7 @@ class SettingsActivity : AppCompatActivity() {
         /**
          * preference change
          */
+
         override fun onPreferenceChange(preference: Preference?, newValue: Any?): Boolean {
             when (preference) {
                 // wallpaper
